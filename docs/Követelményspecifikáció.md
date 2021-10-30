@@ -20,3 +20,13 @@ amiből a program dolgozik legyen módosítható, hiszen pontosítások gyakran 
 valószínűtlen eredményt ne adjon vissza a program, mert akkor feltételezhető a helytelen működés. Az eredmény lehet hasonló, mint a
 feldolgozott adatbázis, de ha eltérő, akkor legyen rendezett, átlátható és precíz. Akár lehet egy Excel táblázat is, de egy grafikon
 még jobb, mivel jobban szemlélteti a javuló vagy esetleg romló járványügyi adatokat.
+
+## Követelmény lista
+
+| ID | Név | Kifejtés |
+| ------------- | ------------- | ------------- |
+| 1 | Időintervallum megadás | A felhasználó az időintervallum megadásával tudja szűrni, mely idő közötti adatokat lássa. |
+| 2 | Listázás | Ezen opció segítségével tudja a bevitt adatokat megjeleníteni az adatbázisból. |
+| 3 | Predict | Ezen funkció segítsével tudja a felhasználó megindítani a jóslási folyamatot. |
+| 4 | Adatbázis | Ezen opció segítsével tudja a felhasználó megadni a kívánt adatbázist. |
+| 5 | Grafikus felület | A felhasználó itt tudja megtekinteni a megjósolt adatokat grafikus felületen. |
