@@ -47,3 +47,24 @@ grafikus felületen is megtekintse a számszerűsített adatokat.
     - Időintervallum megadása
     - Számszerűsített adat
     - Grafikon
+
+## 6. Fizikai környezet
+---
+### Fejlesztői környezet:
+    - Visual Studio Code
+    - Pycharm
+    - Google Colab
+    - Git
+
+### Futtatási környezet:
+    A program futtatásához elsősorban egy számítógép szükséges, amire telepítve van a Python. A folyamatot megkönnyíti, ha telepítjük a Pycharm-ot, mivel
+    azt egyszerű kezelni.
+    Google Colab esetén elég egy Google account, így belépés után már futtatható is a program.
+
+### Specifikáció:
+    - Számítógép egy stabil operációs rendszerrel
+    - Internetkapcsolat
+    - Python
+    - Pycharm
+
+![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/Rendszerterv%20-%20fizikai%20k%C3%B6rnyezet.jpg)
