@@ -11,6 +11,17 @@ dátum (nap, hónap, nap), napi fertőzöttek, halálozás, ország, népesség,
 Az bemenő adatbázis módosítható, hiszen pontosabb adatok bármikor előfordulhatnak, így a kimenet reálisabb lesz.
 A program a kimenetet számszerűsített adatokkal, vagy grafikon segítségével adja vissza.
 
+## 2. Jelenlegi helyzet
+---
+A megrendelő egy olyan programot szeretne, ami szemlélteti számszerűsített adatokkal vagy grafikonnal a COVID-19 járvány terjedését. Ezt egy Python program
+segítségével képzeli el, hiszen így egy számítógépre lesz csak szüksége, amin megadja az időintervallumot és meg is kapja a várható adatokat. A bemeneti
+adatokat egy adatbázissal akarja megadni, mivel az könnyen módosítható (pontosabb adatok érdekében, hiszen bármikor változhatnak az adatok, így pontosabb
+adatokkal reálisabb eredményt kaphatunk), illetve akár teljesen cserélhető is. Jelenleg sok forrásból dolgozik a megrendelő, ami sok nehézséget eredményez,
+illetve nagy odafigyelést igényel. Fontos számára, hogy a program ne adjon vissza olyan adatot, ami már első ránézésre sem jó, hiszen akkor a projekt nem
+teljesíti célját. Emelett leszögezte, hogy a GUI felületnek egyszerűnek és felhasználóbarátnak kell lennie, hogy mindenki tudja használni (azok is, akik
+egyáltalán nem értenek a programozáshoz). Ezen okokból kifolyólag megkértek minket, hogy csináljuk meg nekik a vágyott programot, ami megkönnyíti mindennapi
+munkájukat a járvány elleni védekezésben.
+
 ## 4. Használati eset
 ---
 
