@@ -22,6 +22,10 @@ teljesíti célját. Emelett leszögezte, hogy a GUI felületnek egyszerűnek é
 egyáltalán nem értenek a programozáshoz). Ezen okokból kifolyólag megkértek minket, hogy csináljuk meg nekik a vágyott programot, ami megkönnyíti mindennapi
 munkájukat a járvány elleni védekezésben.
 
+## 3. Jelenlegi üzleti folyamatok modellje
+---
+![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/jelenlegiuzeltifolyamatokmodellje.jpg)
+
 ## 4. Használati eset
 ---
 
