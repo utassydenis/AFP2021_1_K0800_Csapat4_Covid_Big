@@ -28,3 +28,22 @@ grafikus felületen is megtekintse a számszerűsített adatokat.
     - A programnak átláthatónak kell lennie
     - Pontosnak kell lennie
     - Gyorsnak kell lennie
+
+## 5. Funkcionális terv
+---
+### Rendszerszereplők:
+    - Felhasználó
+
+### Rendszerhasználati esetek és lefutásaik:
+
+* Felhasználó:
+    - Meg tudja adni az időintervallumot
+    - Megtekintheti az eredményt számszerűsített adattal
+    - Megtekintheti az eredményt grafikonon
+
+### Menü-hierarchiák:
+
+* Main menu:
+    - Időintervallum megadása
+    - Számszerűsített adat
+    - Grafikon
