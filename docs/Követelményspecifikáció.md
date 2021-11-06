@@ -9,6 +9,12 @@ dolgozza fel az adatokat. Az időintervallum tetszőleges, lehet több hónap, e
 2021.10.10-ig állítjuk ezt be, akkor az adatok feldolgozásával meg tudja jósolni a 2021.10.11-2021.10.17-re valószínűsíthető COVID
 adatokat.
 
+## 2. Jelenlegi helyzet
+---
+A megrendelő szeretne jobban belátást nyerni a COVID-19 által keletkezett megbetegedések számában. A program ezt szeretné lehetővé tenni, könnyű kezelése, hatékonysága és gyorsasága révén, ami által könnyedén szinte nulla szakértelem nélkül megjeleníthető a program
+által jósolt megbetegedések adatai. A program egyfajta számolásnak köszönhetően képes ezt megjeleníteni a felhasználója számára. A
+rendszer a pontos adatok (ezalatt most a dátumokat értem) felvitele után lesz képes a számolásra, azaz a jóslásra. A számok nem lesznek teljesen pontosak, egyfajta megközelítő értékkel szolgál, amiből ki lehet indulni és következtetéseket levonni az eredmény felhasználása során. 
+
 ## 3. Vágyálom rendszer
 A 2019 végén megjelenő új koronavírus, a SARS-CoV-2 a világ minden kormányát jelentős kihívások elé állította. Az egészségügyi
 kapacitások tervezése, a járvány megállítását célzó korlátozó intézkedések bevezetése vagy megszüntetése döntéstámogató előrejelző
