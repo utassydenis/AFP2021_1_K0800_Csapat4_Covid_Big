@@ -40,4 +40,12 @@ még jobb, mivel jobban szemlélteti a javuló vagy esetleg romló járványügy
 ## 4. Jelenlegi üzleti folyamatok
 
 Jelenleg a megrendelő a különböző webes felületeken tud tájékozódni a statisztikákról (Google statisztikák, https://koronavirus.gov.hu/, stb.), ahol a jelenlegi statisztikákat tudja elérni. Az előrejelzések webhelyenként eltérőek.
-
+
+## 5. Igényelt üzleti folyamatok
+
+1. Online megjelenés
+2. Adatbázis
+    1. Online adatbázisokból lekérdezés
+    2. Adattárolás
+3. Adatok listázása egy megadott időintervallumon belül
+4. Megbetegedés, halálozások, gyógyulások előrejelzése
