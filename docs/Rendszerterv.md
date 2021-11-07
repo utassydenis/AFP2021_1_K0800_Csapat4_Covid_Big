@@ -68,3 +68,13 @@ grafikus felületen is megtekintse a számszerűsített adatokat.
     - Pycharm
 
 ![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/Rendszerterv%20-%20fizikai%20k%C3%B6rnyezet.jpg)
+
+## 7. Architekturális terv
+--
+A kliens és a szerver HTTP/HTTPS protokolon keresztül kommunikál egymással.
+
+### Backend:
+-Az adatok tárolásához szükség lesz egy adatbázisra amihez MySql-t használunk.
+-A program különféle megadott oldalakról lekéri az eddigi és aktuális adatokat amit hozzáad az adatbázishoz és rendszerezi időrend, illetve régió alapján.
+-A program egy Python scriptet használ ami legenerálja az előrejelzést.
+
