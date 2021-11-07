@@ -86,4 +86,8 @@ Adatbázis tesztelése:
     Adatok lekérése a weboldalaktól.
     Adatok tárolása.
 
-
+
+## 9. Karbantartási terv
+--
+A rendszer karbantartása időszakos lesz. Hibákat a felhasználó egy hibabejelentő gomb segítségével tudja majd jelezni a fejlesztők felé.
+A hibabejelentésnél a felhasználó leírhatja mi a hiba és opcionálisan megadhatja a folyamatot amivel a hiba történt (opcionálisan képernyőkép feltöltése). Az üzenetet csak a fejlesztők látják.
