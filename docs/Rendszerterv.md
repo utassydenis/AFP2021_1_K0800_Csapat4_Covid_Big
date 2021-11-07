@@ -77,4 +77,13 @@ A kliens és a szerver HTTP/HTTPS protokolon keresztül kommunikál egymással.
 -Az adatok tárolásához szükség lesz egy adatbázisra amihez MySql-t használunk.
 -A program különféle megadott oldalakról lekéri az eddigi és aktuális adatokat amit hozzáad az adatbázishoz és rendszerezi időrend, illetve régió alapján.
 -A program egy Python scriptet használ ami legenerálja az előrejelzést.
+
+## 8. Telepítési terv
+--
+A program webes felületen lesz elérhető.
+PhpMyadmin konfigurálása.
+Adatbázis tesztelése:
+    Adatok lekérése a weboldalaktól.
+    Adatok tárolása.
+
 
