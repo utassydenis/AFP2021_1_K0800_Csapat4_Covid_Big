@@ -36,3 +36,8 @@ még jobb, mivel jobban szemlélteti a javuló vagy esetleg romló járványügy
 | 3 | Predict | Ezen funkció segítsével tudja a felhasználó megindítani a jóslási folyamatot. |
 | 4 | Adatbázis | Ezen opció segítsével tudja a felhasználó megadni a kívánt adatbázist. |
 | 5 | Grafikus felület | A felhasználó itt tudja megtekinteni a megjósolt adatokat grafikus felületen. |
+
+## 4. Jelenlegi üzleti folyamatok
+
+Jelenleg a megrendelő a különböző webes felületeken tud tájékozódni a statisztikákról (Google statisztikák, https://koronavirus.gov.hu/, stb.), ahol a jelenlegi statisztikákat tudja elérni. Az előrejelzések webhelyenként eltérőek.
+
