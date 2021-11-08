@@ -28,7 +28,7 @@ munkájukat a járvány elleni védekezésben.
 
 ## 4. Igényelt üzleti folyamatok modellje
 ---
-![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/funkspec-igényelt üzleti folyamatok modellje.jpg)
+![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/funkspec-igényeltüzletifolyamatokmodellje.jpg)
 
 ## 5. Használati eset
 ---
