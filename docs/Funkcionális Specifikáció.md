@@ -51,3 +51,26 @@ Amint beállította a számára érdekes idő intervallumot, kezdheti is a jósl
 számszerűsítve, de rajzolt grafikus felületen is elérhető lesz számára.
 
 ![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/CovidUseCaseDatabase.png)
+
+## 9. Fogalomtár
+---
+**Python**: A Python jelenleg talán a legjelentősebb szkriptnyelv (TIOBE index 4. hely Java, C és C++ után). Szkritpnyelvként a Python
+lehetővé teszi, hogy magasabb szintű, absztraktabb, elegánsabb kódot írjunk, azon az áron, hogy a program lassabban fog futni. Ahogyan
+egyre gyorsabbak a gépek, egyre több és több olyan feladat van, ahol egyszerűen nincs igény a nyers vas sebességére.
+
+**COVID**: A Covid19 (koronavírus-betegség 2019, coronavirus disease 2019) vírusos légúti, illetve légzőszervi megbetegedés, amelyet a
+SARS-CoV-2 nevű koronavírus okoz.  A COVID-19 fertőzés a tüdők mellett más szerveket is károsíthat, ezzel növelve a hosszú távú 
+egészségi problémák kockázatát. Okozhat szívizomgyulladást, amelynek szövődményeként akár szívelégtelenség is felléphet.
+
+**GUI**: A grafikus felhasználói felület vagy grafikus felhasználói interfész (angolul graphical user interface, röviden GUI) a
+számítástechnikában olyan, a számítógép és ember közti kapcsolatot megvalósító elemek összessége, melyek a monitor képernyőjén szöveges
+és rajzos elemek együtteseként jelennek meg. A grafikus felhasználói felületeken alapvető szerepe van a mutatóeszközök, például az egér
+használatának, amelyekkel a grafikus felület elemei intuitív módon, a fizikai világ egyfajta modelljeként kezelhetők. A leggyakoribb
+grafikus felhasználói elemek az ablakok, menük, választógombok, jelölőnégyzetek és ikonok, valamint a mutatóeszközhöz kapcsolódó
+egérkurzor.
+
+**Forecast**:  Egyfajta előrejelzés vagy prognózis.
+
+**Adatbázis**: Az adatbázis azonos minőségű, többnyire strukturált adatok összessége, amelyet egy azok tárolására, lekérdezésére és
+szerkesztésére alkalmas szoftvereszköz kezel. Célja: adatok megbízható, hosszú távon tartós tárolása és viszonylag gyors
+visszakereshetőségének biztosítása.
