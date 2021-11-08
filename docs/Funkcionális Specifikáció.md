@@ -26,7 +26,11 @@ munkájukat a járvány elleni védekezésben.
 ---
 ![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/jelenlegiuzeltifolyamatokmodellje.jpg)
 
-## 4. Használati eset
+## 4. Igényelt üzleti folyamatok modellje
+---
+![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/funkspec-igényelt üzleti folyamatok modellje.jpg)
+
+## 5. Használati eset
 ---
 
 ### LEÍRÁS
