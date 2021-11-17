@@ -96,3 +96,12 @@ A felhasználónak le kell töltenie az alkalmazást a saját gépére, biztosí
 --
 A rendszer karbantartása időszakos lesz. Hibákat a felhasználó egy hibabejelentő gomb segítségével tudja majd jelezni a fejlesztők felé.
 A hibabejelentésnél a felhasználó leírhatja mi a hiba és opcionálisan megadhatja a folyamatot amivel a hiba történt (opcionálisan képernyőkép feltöltése). Az üzenetet csak a fejlesztők látják.
+
+## 10. Adatbázis terv
+--
+![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/adatb%C3%A1zis%20terv.png)
+
+Az program leellenőrzi , hogy az adatbázis létezik e, ha nem létrehozza.
+Ezután a program leellenőrzi , hogy létezik e a tábla, ha nem létrehozza.
+A program ezután feltölti az adatokat.
+Ezt a program a "frissítés" gombbal automatikusan elvégzi.
