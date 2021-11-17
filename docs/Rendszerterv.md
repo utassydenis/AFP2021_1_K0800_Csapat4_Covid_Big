@@ -71,12 +71,21 @@ grafikus felületen is megtekintse a számszerűsített adatokat.
 
 ## 7. Architekturális terv
 --
-A kliens és a szerver HTTP/HTTPS protokolon keresztül kommunikál egymással.
+A program Python alapon, MySQL adatbázissal működik, így a működéshez szükség van XAMPP-ra.
+A program képes frissíteni az adatbázist:
+    1.: A program a frissítés gombbal letölti az internetről a legfrissebb adatokat.
+    2.: A letöltött adatokból a program működéséhez szükséges adatoka átmásolja egy másik fájlba.
+    3.: A program belép a MySQL-be:
+        3.1.: A program leellenőrzi , hogy a használt adatbázis létezik e.
+            3.1.1: Ha nem létezik az adatbázis , akkor a program létrehozza az adatbázist.
+        3.2.: A program leellenőrzi , hogy létezik e a használt tábla.
+            3.2.1.: Ha nem létezik a tábla , akkor a program létrehozza a táblát.
+        3.3.: A program feltölti az adatokat a táblába.
+A program képes egy megadott időintervallumból lekérdezni a megbetegedési , illetve halálozási adatokat, régiókra bontva.
+    1.: Az program leellenőrzi , hogy a megadott időszak a megfelelő módon volt e megadva.
+    2.: A program lekérdezi, hogy a megadott időszak az adatbázis adatain bell esik e.
+    3.: A program a megadott régiónak és időintervallumnak megfelelően kijelzi az adatokat a felhasználó számára.
 
-### Backend:
--Az adatok tárolásához szükség lesz egy adatbázisra amihez MySql-t használunk.
--A program különféle megadott oldalakról lekéri az eddigi és aktuális adatokat amit hozzáad az adatbázishoz és rendszerezi időrend, illetve régió alapján.
--A program egy Python scriptet használ ami legenerálja az előrejelzést.
 
 ## 8. Telepítési terv
 --
