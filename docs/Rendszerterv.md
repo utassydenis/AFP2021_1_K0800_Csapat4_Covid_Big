@@ -89,12 +89,8 @@ A program képes egy megadott időintervallumból lekérdezni a megbetegedési ,
 
 ## 8. Telepítési terv
 --
-A program webes felületen lesz elérhető.
-PhpMyadmin konfigurálása.
-Adatbázis tesztelése:
-    Adatok lekérése a weboldalaktól.
-    Adatok tárolása.
-
+A program lokálisan működik.
+A futtatáshoz szükség van MySQL elérésre, illetve internetkapcsolatra.
 
 ## 9. Karbantartási terv
 --
