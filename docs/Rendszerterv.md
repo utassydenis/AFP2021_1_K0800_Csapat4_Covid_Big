@@ -71,26 +71,26 @@ grafikus felületen is megtekintse a számszerűsített adatokat.
 
 ## 7. Architekturális terv
 --
-A program Python alapon, MySQL adatbázissal működik, így a működéshez szükség van XAMPP-ra.
-A program képes frissíteni az adatbázist:
-    1.: A program a frissítés gombbal letölti az internetről a legfrissebb adatokat.
-    2.: A letöltött adatokból a program működéséhez szükséges adatoka átmásolja egy másik fájlba.
-    3.: A program belép a MySQL-be:
-        3.1.: A program leellenőrzi , hogy a használt adatbázis létezik e.
-            3.1.1: Ha nem létezik az adatbázis , akkor a program létrehozza az adatbázist.
-        3.2.: A program leellenőrzi , hogy létezik e a használt tábla.
-            3.2.1.: Ha nem létezik a tábla , akkor a program létrehozza a táblát.
-        3.3.: A program feltölti az adatokat a táblába.
-A program képes egy megadott időintervallumból lekérdezni a megbetegedési , illetve halálozási adatokat, régiókra bontva.
-    1.: Az program leellenőrzi , hogy a megadott időszak a megfelelő módon volt e megadva.
-    2.: A program lekérdezi, hogy a megadott időszak az adatbázis adatain bell esik e.
-    3.: A program a megadott régiónak és időintervallumnak megfelelően kijelzi az adatokat a felhasználó számára.
+Felhasznált technológiák:
+ 1. MySQL:
+    A MySQL kezeli az adatbázisunkat, itt tároljuk el az adatokat.
+    A program "query"-n keresztül kommunikál az adatbázissal, lekérdezéseket, müveleket végez el benne.
+    XAMPP-al vezérelt, localhost-on elérhető.
+2.  Python:   
+    PyCharm fejlesztői környezetben folyik a programozás.
+    A python program kezelői felülete Kivy használatával hoztuk létre, ennek segítségével rendezzük el a gombokat, képeket, feliratokat, megejelenő ablak méretét.
+    A program letöltött adatok alapján dolgozik.
+    Ezekből az adatokból kiválasztja a számunkra szükséges adatokat, amiket feltölt az adatbázisba.
+    Az adatbázishoz a connector package használatával tud kapcsolódni, mysql connect használatával.
+    Miután a kapcsolat létrejött a cursor használatával hajt végre utasításokat.
+
 
 
 ## 8. Telepítési terv
 --
 A program lokálisan működik.
 A futtatáshoz szükség van MySQL elérésre, illetve internetkapcsolatra.
+A felhasználónak le kell töltenie az alkalmazást a saját gépére, biztosítania kell a localhost elérését XAMPP-on keresztül.
 
 ## 9. Karbantartási terv
 --
