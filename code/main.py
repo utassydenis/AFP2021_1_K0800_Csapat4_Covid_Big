@@ -107,6 +107,28 @@ class Covid(FloatLayout):
         mycursor.close()
         mydb.close()
 
+    #To-do eleje Milán és Bálint
+    def calculate_infected_total_cases(self):
+        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
+        mycursor = mydb.cursor()
+
+        mycursor.close()
+        mydb.close()
+
+    def calculate_death_total_cases(self):
+        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
+        mycursor = mydb.cursor()
+
+        mycursor.close()
+        mydb.close()
+
+    def distinct_countries(self):
+        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
+        mycursor = mydb.cursor()
+
+        mycursor.close()
+        mydb.close()
+    #To-do vége Milán és Bálint
 
     def reset_db(self):
         mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
