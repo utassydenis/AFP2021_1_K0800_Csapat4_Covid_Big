@@ -16,6 +16,7 @@ Config.set("graphics", "resizable", "0")
 class Covid(FloatLayout):
     def __init__(self, **kwargs):
         super(Covid, self).__init__(**kwargs)
+    # ----- update_db által meghívott fgvnyek -----
 
     def dir_exist(self):
         if not os.path.exists("database"):
@@ -124,7 +125,9 @@ class Covid(FloatLayout):
         mydb.commit()
         mycursor.close()
         mydb.close()
+    # ----- update_db által meghívott fgvnyek -----
 
+    # ----- search_db által meghívott fgvnyek -----
     def check_separator(self,from_value,till_value):
         if (till_value.find("-") > 0 and from_value.find("-")):
             return True
@@ -184,6 +187,8 @@ class Covid(FloatLayout):
         self.ids.FertőPlaceHolder.text = re.sub("[^0-9]", "", str(infected_sum))
         mycursor.close()
         mydb.close()
+    # ----- search_db által meghívott fgvnyek -----
+
     def update_db(self):
         print("Update started!")
         self.dir_exist()
