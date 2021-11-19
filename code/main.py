@@ -87,6 +87,25 @@ class Covid(FloatLayout):
         print("Table doesn't exist.")
         return False
 
+    def create_table(self):
+        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
+        mycursor = mydb.cursor()
+        print("Creating table.")
+        mycursor.execute("CREATE TABLE covid (ID int NOT NULL AUTO_INCREMENT,  DATE date, INFECTED_NUM int, DEATH_NUM int, COUNTRY varchar(255), CONTINENT varchar(255) , INFECTED_TOTAL_CASES int , DEATH_TOTAL_CASES int , PRIMARY KEY (ID));")
+        print("Table created.")
+        print("Populating table.")
+        sql = "INSERT INTO Covid(DATE,INFECTED_NUM,DEATH_NUM,COUNTRY,CONTINENT) VALUES (%s, %s,%s,%s,%s)"
+        file = open("database/dataTrim.csv", "r")
+        for line in file:
+            darabok = line.split(sep=",")
+            convert = darabok[0].split(sep="/")
+            date = convert[2] + "-" + convert[1] + "-" + convert[0]
+            val = (date, darabok[1], darabok[2], darabok[3], darabok[4])
+            mycursor.execute(sql, val)
+        mydb.commit()
+        mycursor.close()
+        mydb.close()
+
     def update_db(self):
         print("Update started!")
         self.dir_exist()
