@@ -71,6 +71,22 @@ class Covid(FloatLayout):
         mydb.close()
         mycursor.close()
 
+    def check_if_table_exists(self):
+        print("Checking if table exists.")
+        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
+        mycursor = mydb.cursor()
+        mycursor.execute("SHOW TABLES")
+        for x in mycursor:
+            if str(x) == "('covid',)":
+                mycursor.close()
+                mydb.close()
+                print("Table exists.")
+                return True
+        mycursor.close()
+        mydb.close()
+        print("Table doesn't exist.")
+        return False
+
     def update_db(self):
         print("Update started!")
         self.dir_exist()
