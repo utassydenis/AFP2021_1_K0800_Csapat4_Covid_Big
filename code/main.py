@@ -56,6 +56,21 @@ class Covid(FloatLayout):
         outF.close()
         print("Trim done.")
 
+    def check_if_db_exists(self):
+        mydb = mysql.connector.connect(host="localhost", user="root")
+        mycursor = mydb.cursor()
+        mycursor.execute("SHOW DATABASES")
+        database_exist = False
+        for x in mycursor:
+            if str(x) == "('covid_database',)":
+                database_exist = True
+        if database_exist == False:
+            print("Database doesn't exist. Creating database.")
+            mycursor.execute("CREATE DATABASE covid_database")
+            print("Database created.")
+        mydb.close()
+        mycursor.close()
+
     def update_db(self):
         print("Update started!")
         self.dir_exist()
