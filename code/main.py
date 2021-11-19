@@ -124,6 +124,12 @@ class Covid(FloatLayout):
         mydb.commit()
         mycursor.close()
         mydb.close()
+    def check_separator(self,from_value,till_value):
+        if (till_value.find("-") > 0 and from_value.find("-")):
+            return True
+        else:
+            return False
+
     def update_db(self):
         print("Update started!")
         self.dir_exist()
