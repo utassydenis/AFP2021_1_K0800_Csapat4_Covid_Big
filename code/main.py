@@ -21,6 +21,23 @@ class Covid(FloatLayout):
         if not os.path.exists("database"):
             os.makedirs("database")
 
+    def download_cvs(self):
+        print("Source file doesn't exist. Downloading...")
+        url = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/csv/data.csv'
+        r = requests.get(url, allow_redirects=True)
+        open('database/data.csv', 'wb').write(r.content)
+        print("Source file downloaded.")
+
+    def make_Trimmed_file(self):
+        if not os.path.exists("database/dataTrim.csv"):
+            print("Trim file doesn't exist. Making trim file.")
+            open("database/dataTrim.csv", "x")
+            print("Trim file created")
+        else:
+            print("Resetting trim file")
+            open('database/dataTrim.csv', "w").close()
+            print("Trim file reset success.")
+
     def update_db(self):
         print("Update started!")
         self.dir_exist()
