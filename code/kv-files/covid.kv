@@ -1,0 +1,73 @@
+<Covid>:
+    canvas:
+        Rectangle:
+            size: 720, 576
+            pos: 450, 200
+            source: "images/eu.png"
+    Spinner:
+        id: régió
+        text: 'Világ'
+        size_hint: 0.30,0.1
+        pos_hint:{'top':1}
+        values:  'Világ','Európa', 'Austria', 'Belgium', 'Bulgaria', 'Cyprus','Czechia' , 'Denmark' , 'Estonia' , 'Finland' , 'France' , 'Greece' , 'Netherlands' , 'Croatia' , 'Ireland' , 'Latvia' , 'Poland' , 'Lithuania' , 'Luxembourg' , 'Hungary', 'Malta' , 'Germany' , 'Italy' , 'Portugal' , 'Romania' , 'Spain' , 'Sweden' , 'Slovakia' , 'Slovenia'
+    TextInput:
+        id: ig
+        hint_text: 'YYYY-MM-DD'
+        multiline: False
+        size_hint: 0.1,0.05
+        pos_hint:{'right':0.24, 'top':0.9}
+    TextInput:
+        id: tól
+        hint_text: 'YYYY-MM-DD'
+        multiline: False
+        size_hint: 0.1,0.05
+        pos_hint:{'right':0.1 ,'top':0.9}
+    Label:
+        text:"-tól"
+        size_hint: 0.1,0.05
+        pos_hint:{'right':0.17 ,'top':0.9}
+    Label:
+        text:"-ig"
+        size_hint: 0.1,0.05
+        pos_hint:{'right':0.30 ,'top':0.9}
+
+    Label:
+        text:"Fertőzöttek"
+        size_hint: 0.1,0.05
+        pos_hint:{'right':0.2 ,'top':0.8}
+    Label:
+        id: FertőPlaceHolder
+        size_hint: 0.1,0.05
+        pos_hint:{'right':0.2 ,'top':0.7}
+    Label:
+        text:"Halottak"
+        size_hint: 0.1,0.05
+        pos_hint:{'right':0.2 ,'top':0.6}
+    Label:
+        id: HalottPlaceHolder
+        size_hint: 0.1,0.05
+        pos_hint:{'right':0.2 ,'top':0.5}
+    Button:
+        text: 'Frissítés'
+        size_hint: 0.1, 0.05
+        pos_hint:{'right':1, 'top':1}
+        on_press: root.update_db()
+    Button:
+        text: 'Elküldés'
+        size_hint: 0.30,0.1
+        pos_hint:{'top':.3, 'right': 0.3}
+        on_press: root.search_db()
+    Button:
+        text: '2 hét'
+        size_hint:0.30,0.1
+        pos_hint:{'top':.2, 'right':0.3}
+    Button:
+        text: '1 hónap'
+        size_hint:0.30,0.1
+        pos_hint:{'top':.1 , 'right':0.3}
+    Button:
+        id: hiba
+        text: 'Hibabejelentés'
+        size_hint: 0.30,0.1
+        pos_hint:{'top':.1, 'right':1}
+
