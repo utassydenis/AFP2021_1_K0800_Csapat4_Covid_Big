@@ -139,6 +139,15 @@ class Covid(FloatLayout):
             self.reset_db()
         print("Done updating")
 
+    def search_db(self):
+        if not self.check_separator(self.ids.tól.text, self.ids.ig.text):
+            print("Hibás elválasztók! Kérem használjon '-'-t")
+        else:
+            if self.check_if_date_correct(self.ids.tól.text,self.ids.ig.text):
+                self.return_values(self.ids.régió.text, self.ids.tól.text, self.ids.ig.text)
+            else:
+                print("Kérem adjon meg más dátumokat.")
+
 class CovidApp(App):
     def build(self):
         return Covid()
