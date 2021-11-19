@@ -16,6 +16,30 @@ Config.set("graphics", "resizable", "0")
 class Covid(FloatLayout):
     def __init__(self, **kwargs):
         super(Covid, self).__init__(**kwargs)
+
+    #To-do eleje Milán és Bálint
+    def calculate_infected_total_cases(self):
+        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
+        mycursor = mydb.cursor()
+
+        mycursor.close()
+        mydb.close()
+
+    def calculate_death_total_cases(self):
+        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
+        mycursor = mydb.cursor()
+
+        mycursor.close()
+        mydb.close()
+
+    def distinct_countries(self):
+        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
+        mycursor = mydb.cursor()
+
+        mycursor.close()
+        mydb.close()
+    #To-do vége Milán és Bálint
+        
     # ----- update_db által meghívott fgvnyek -----
 
     def dir_exist(self):
@@ -106,29 +130,6 @@ class Covid(FloatLayout):
         mydb.commit()
         mycursor.close()
         mydb.close()
-
-    #To-do eleje Milán és Bálint
-    def calculate_infected_total_cases(self):
-        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
-        mycursor = mydb.cursor()
-
-        mycursor.close()
-        mydb.close()
-
-    def calculate_death_total_cases(self):
-        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
-        mycursor = mydb.cursor()
-
-        mycursor.close()
-        mydb.close()
-
-    def distinct_countries(self):
-        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
-        mycursor = mydb.cursor()
-
-        mycursor.close()
-        mydb.close()
-    #To-do vége Milán és Bálint
 
     def reset_db(self):
         mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
