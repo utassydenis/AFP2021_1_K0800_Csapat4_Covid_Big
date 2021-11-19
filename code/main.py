@@ -130,6 +130,35 @@ class Covid(FloatLayout):
         else:
             return False
 
+    def check_if_date_correct(self,from_section,till_section):
+        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
+        mycursor = mydb.cursor()
+        datemin_query = "SELECT MIN(DATE) FROM covid"
+        datemax_query = "SELECT MAX(DATE) FROM covid"
+        statements = [datemin_query, datemax_query]
+        for statement in statements:
+            mycursor.execute(statement)
+            if statement.find("MIN") > 0:
+                date_min_arr = re.sub('[^0-9,]','',str(mycursor.fetchall())).replace(",","-")[:-1]
+            else:
+                date_max_arr = re.sub('[^0-9,]','',str(mycursor.fetchall())).replace(",","-")[:-1]
+
+        date_min = datetime.strptime(''.join(date_min_arr), '%Y-%m-%d')
+        date_max = datetime.strptime(''.join(date_max_arr), '%Y-%m-%d')
+        try:
+            from_section_date = datetime.strptime(from_section, '%Y-%m-%d')
+            till_section_date = datetime.strptime(till_section, '%Y-%m-%d')
+            if date_min <= from_section_date <= till_section_date <= date_max:
+                mydb.close()
+                mycursor.close()
+                return True
+            else:
+                mydb.close()
+                mycursor.close()
+                return False
+        except ValueError:
+            print("Nem dátumot adott meg.")
+
     def update_db(self):
         print("Update started!")
         self.dir_exist()
