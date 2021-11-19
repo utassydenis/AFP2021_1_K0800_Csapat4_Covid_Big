@@ -12,6 +12,10 @@ class Covid(FloatLayout):
     def __init__(self, **kwargs):
         super(Covid, self).__init__(**kwargs)
 
+    def dir_exist(self):
+        if not os.path.exists("database"):
+            os.makedirs("database")
+
     def update_db(self):
         print("Update started!")
         self.dir_exist()
