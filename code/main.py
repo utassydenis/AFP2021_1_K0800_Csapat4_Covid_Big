@@ -38,6 +38,24 @@ class Covid(FloatLayout):
             open('database/dataTrim.csv', "w").close()
             print("Trim file reset success.")
 
+    def trim_data(self):
+        print("Trimming source file.")
+        inF = open("database/data.csv")
+        outF = open("database/dataTrim.csv", "w")
+        next(inF)
+        for line in inF:
+            darabok = line.split(sep=",")
+            if darabok[6] == '"Bonaire':
+                darabok[6] = "Bonaire_Saint_Eustatius_and_Saba"
+                outF.write(darabok[0] + "," + darabok[4] + "," + darabok[5] + "," + darabok[6] + "," + darabok[11])
+                outF.write("\n")
+            else:
+                outF.write(darabok[0] + "," + darabok[4] + "," + darabok[5] + "," + darabok[6] + "," + darabok[10])
+                outF.write("\n")
+        inF.close()
+        outF.close()
+        print("Trim done.")
+
     def update_db(self):
         print("Update started!")
         self.dir_exist()
