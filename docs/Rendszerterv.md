@@ -105,3 +105,9 @@ Az program leellenőrzi , hogy az adatbázis létezik e, ha nem létrehozza.
 Ezután a program leellenőrzi , hogy létezik e a tábla, ha nem létrehozza.
 A program ezután feltölti az adatokat.
 Ezt a program a "frissítés" gombbal automatikusan elvégzi.
+
+## 11. Implementációs terv
+---
+Python: A GUI felület python nyelven fog készülni. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb
+átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében. A programban megjelenítjük és alkalmazzuk az adatbázis kezelést emellett alkalmazzuk a Python
+grafikus interfészét. 
