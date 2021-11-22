@@ -132,5 +132,10 @@ kirajzolni az adatokat szemléltetve, az eredetiek elhelyezkedését illetve a l
 2. Adatok feldolgozása
 3. Holt - Winters model alkalmazása
 4. A teszteléshez szükséges adatok felvitele a Holt - Winters modelbe
-5. Használjuk a következő képletet:
+5. Használjuk az első képletet:
     ![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/keplet1.jpg)
+6. Használjuk a második képletet:
+    ![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/keplet2.jpg)
+7. Használjuk a harmadik képletet:
+    ![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/keplet3.jpg)
+8. Megjelenítjük a jóslat grafikonját
