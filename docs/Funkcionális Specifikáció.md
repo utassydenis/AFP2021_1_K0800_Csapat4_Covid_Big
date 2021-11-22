@@ -52,6 +52,17 @@ számszerűsítve, de rajzolt grafikus felületen is elérhető lesz számára.
 
 ![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/CovidUseCaseDatabase.png)
 
+## 6. Forgatókönyv
+---
+A COVID-19 járvány negyedik hullámában ismét figyelni kell a járvány adatokat, hogy mennyi betegre számíthatunk. Ilyenkor a megrendelő
+szorgosan keresi a megbízhatóforrásokat az interneten, majd lementi azokat olyan helyre, ahol megmarad (pl. számítógép, de lehet papíralapon
+is). Az adatgyűjtés után nekilát a számolásnak, majd hosszas órák után megkapja az eredményeket, hogy mennyi fertőzött, illetve halott
+várható a közeljövőben. Ez azonban rengeteg energiát és időt igénylő folyamat, ezért a megrendelőnek elege lesz, és eszébe jut, hogy ezt
+egy számítógépes programmal is megcsinálhatná. Éppen ezért megkeresett minket, és megrendelte a programot, amely pár hét múlva kész is lett,
+és sokkal könnyebben, illetve gyorsabban tud vele dolgozni. Pár kattintással megkapja előre az adatokat, így nem kell hosszasan adatokat gyűjtenie
+és számolnia, így órák helyett percek alatt végez. Ráadásul a program grafikonon szemlélteti az eredményeket, így már ránézésre is tudja, mi
+várható. Összességében a megrendelő elégedett.
+
 ## 9. Fogalomtár
 ---
 **Python**: A Python jelenleg talán a legjelentősebb szkriptnyelv (TIOBE index 4. hely Java, C és C++ után). Szkritpnyelvként a Python
