@@ -42,6 +42,10 @@ print(round(int(model.predict(polyFeat.fit_transform([[284 + days]])))), 'people
 x1 = np.array(list(range(1, 284+days))).reshape(-1, 1)
 y1 = model.predict(polyFeat.fit_transform(x1))
 
+plt.title('Modell')
+plt.xlabel('Napok')
+plt.ylabel('Megbetegedések')
+plt.legend(['Eredeti'])
 plt.plot(y1, '--r')
 plt.plot(y0, '--b')
 plt.show()
