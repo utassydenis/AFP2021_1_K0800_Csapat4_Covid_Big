@@ -71,3 +71,34 @@ Az algoritmus ezen szintjén képes beolvasott covid19 megbetegedési esetszám 
 illetve képes összehasonlítani a meglevő adatokkal, mellyel reprezentálhatja a pontosságot. Emellett képes
 kirajzolni az adatokat szemléltetve, az eredetiek elhelyezkedését illetve a lináris növekedést is.
 
+---
+
+ ## coronaPredictor.py
+
+ Az algoritmus polinomiális regressziót alkalmaz.
+
+ ### Polinomiális regresszió:
+
+ A regressziót úgy kell meghatározni, hogy az eredmény kiszámításához a független és a függő változók közötti kapcsolatot
+ megtalálja. Az első polinomiális regressziós modellt Gergonne 1815-ben alkalmazta. Arra szolgál, hogy megtalálják a
+ legmegfelelőbb sort a regressziós vonal segítségével az eredmények előrejelzésére. A regressziós technikáknak sokféle
+ típusa létezik, ezek közül a polinomiális regresszió egyike.
+
+ Ez az egyik olyan regressziós technika, amelyet a szakemberek használnak az eredmény előrejelzésére. Ez a független és
+ a függő változók közötti kapcsolat, ha a függő változó az n. fokozatú független változóhoz kapcsolódik. Nem követeli meg,
+ hogy a függő és a független változók közötti kapcsolat legyen lineáris, tehát ha a vonal görbe, akkor lehet, hogy
+ bármilyen polinom kifejezése van.
+
+ A fő különbség a lineáris és a polinomiális regresszió között az, hogy a lineáris regresszió megköveteli a függő és
+ független változók lineáris összekapcsolását, miközben ez jobban illeszkedik a vonalhoz, ha az egyenletben magasabb
+ fokot foglalunk be a független változó kifejezésbe.
+
+ Egyenlete: I = b0 + a1x + a2x ^ 2 + a3x ^ 3 +…. ANX ^ n
+
+ Ha magasabb fokokat adunk hozzá, például kvadratikusan, akkor a vonal görbévé válik, amely jobban illeszkedik az adatokhoz.
+
+ Az algoritmus a pandas, numpy, matplotlib, sklearn könyvtárak alapján íródott.
+
+ ![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/polynomial-regression.jpg)
+
+ 
