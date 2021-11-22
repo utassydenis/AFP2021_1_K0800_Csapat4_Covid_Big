@@ -73,7 +73,7 @@ kirajzolni az adatokat szemléltetve, az eredetiek elhelyezkedését illetve a l
 
 ---
 
- ## coronaPredictor.py
+ ## Polynomial regression (coronaPredictor.py)
 
  Az algoritmus polinomiális regressziót alkalmaz.
 
@@ -101,4 +101,27 @@ kirajzolni az adatokat szemléltetve, az eredetiek elhelyezkedését illetve a l
 
  ![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/polynomial-regression.jpg)
 
- 
+ ### Az algoritmus felépítése:
+
+ 1. Beimportáljuk a kódolás alatt felhasznált könyvtárakat.
+ 2. Beolvassuk az adatbázist csv fájlból.
+ 3. Kiválasztjuk a megfelelő oszlopokat az adatbázisból, amivel dolgozni fogunk.
+ 4. Előkészítjük az adatokat: 
+        numpy array-re konvertáljuk az adatokat (a reshape szükséges a gépi tanuláshoz -> új alakot ad a tömbnek az
+        adatok megváltoztatása nélkül)
+ 5. Létrehozzuk a számok hatványait a PolynomialFeature() függvénnyel.
+ 6. Elhelyezzük a hatványokat egy külön oszlopban a fit_transform() függvény segítségével.
+ 7. Feldolgozzuk az adatokat: létrehozzuk a modellt (lineáris)
+ 8. Az adatot átadjuk paraméterként (.fit())
+ 9. Kiszámítjuk a pontosságot: 
+        model.score() -> visszaadja a jóslat determinációs együtthatóját
+ 10. A predict() függvény segítségével létrehozzuk a jóslatot az y0 változóba (nem a jövőre nézve, eddigiekre!).
+ 11. Egy változóban eltároljuk, hogy hány napra szeretnénk jósolni.
+ 12. Számolás: predict() függvény segítségével (paramétere az összes nap + jósolt napok).
+ 13. Grafikon kirajzolása: 
+        numpy arreyre konvertáljuk 1-30-ig az adatokat + a jósolandó napokat -> listává konvertáljuk -> reshape()
+        y1 változóba jósoljuk az adatokat, majd kirajzoljuk
+
+
+
+
