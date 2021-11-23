@@ -122,6 +122,7 @@ kirajzolni az adatokat szemléltetve, az eredetiek elhelyezkedését illetve a l
         numpy arreyre konvertáljuk 1-30-ig az adatokat + a jósolandó napokat -> listává konvertáljuk -> reshape()
         y1 változóba jósoljuk az adatokat, majd kirajzoljuk
 
+![Image](https://github.com/utassydenis/AFP2021_1_K0800_Csapat4_Covid_Big/blob/main/pictures/algoritmus.jpg)
 
 ---
 ### Linear model:
