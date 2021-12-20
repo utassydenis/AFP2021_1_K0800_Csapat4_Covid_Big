@@ -11,6 +11,9 @@
 | 9  | Dátum megadás az input mezőben. | A dátum szűrést 7 és 14 napra állítjuk és várjuk a különböző visszaadott értékeket. | Sikeres | - |Egyaránt helyes visszatérési érték megállapítása. | 2021.12.20 |
 | 10 | Adatbázis cserével való tesztelés | Más xlsx illetve csv adatokat dolgoztatunk fel az algoritmussal. | Sikertelen | Az xlsx-et tökéletesen beolvassa, csv feldolgozást még javítani kell. |Kiterjesztéstől függetlenül helyes beolvasás az elvárható.| 2021.12.20 |
 | 11 | A fő predictor algoritmus és a mellék input algoritmus összeillesztése. | A két kód lineáris együttműködésének vizsgálata azonos adatbázissal. | Sikertelen | Az input algoritmus hibás pontosággal dolgozik. | Második algoritmus fejlesztésre szorul. | Tökéletes pontossággal való együttműködés a két kód megírása között. | 2021.12.20 |
+| 12 | A mellék algoritmus adatbázis használata| Sikeresen olvassa a fő algoritmus számára előkészített adatbázist | Sikeres | - | Hibamentes beolvasás a predikcióhoz | 2021.12.20|
+| 13 | A mellék algoritmus adatfeldolgozása | A felosztás és fölösleges adatok kiszűrése sikeres.| Sikeres | - | Hibátlan szűrés, az algoritmusnak tökéletesesn kell olvasnia az adatokat csv-ből | 2021.12.20 |
+| 14 | A mellék algoritmus tesztelése hibás adatbázissal| Hibaüzenet visszadobásnak sikeressége.| Sikertelen | Nem a megfelelő hibazüzenet jelenik meg. | Megfelelően informáló hibaüzenet visszaadása a user felé. | 2021.12.20 |
 
 
 ## Rados Kevin által készített report.
