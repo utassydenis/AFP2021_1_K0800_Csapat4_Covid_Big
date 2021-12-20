@@ -5,3 +5,6 @@
 | 3  | Számítások  | Az algoritmus képes a számításra, viszont adatai még nem tökéletes. | Még javítható. | - | Tökéletes matematikai pontossággal való számítás. | 2021.12.13 |
 | 4  | Adatok megjelenítése  | A kreált adatokat grafikon formában megkapjuk. | Sikeres | - | Vizuális reprezentálása az adatoknak. | 2021.12.13 |
 | 5  | Predikció  | Nem ad még tökéletes adatokat vissza, javítani kell a pontosságot. | Még javítható. | Pontossággal való gondok. | A grafikonon ábrázolt görbébe tökéletesen beleillő adat visszaadása. | 2021.12.13 |
+| 6  | Frontend gombjainak működése  | Gombok elhelyezkedése helyes, hibamentesen futnak | Sikeres | - | Hibaüzenet nélkül adja vissza a várt értéket. | 2021.12.20 |
+| 7  | Frissítés gomb működése | Megnyomás esetén letölti a database.xlsx-et. | Sikeres | - | A letöltés megtörténik, az adatbázis használatra kész. | 2021.12.20 |
+| 8  | Frissítés gomb rossz változók esetén. | Ha nem létezik az SQL adatbázis, akkor létre kell hoznia, majd feltöltenia helyes adatokkal. | Sikeres | - | 2021.12.20 |
