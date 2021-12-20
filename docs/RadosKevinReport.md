@@ -14,6 +14,9 @@
 | 12 | A mellék algoritmus adatbázis használata| Sikeresen olvassa a fő algoritmus számára előkészített adatbázist | Sikeres | - | Hibamentes beolvasás a predikcióhoz | 2021.12.20|
 | 13 | A mellék algoritmus adatfeldolgozása | A felosztás és fölösleges adatok kiszűrése sikeres.| Sikeres | - | Hibátlan szűrés, az algoritmusnak tökéletesesn kell olvasnia az adatokat csv-ből | 2021.12.20 |
 | 14 | A mellék algoritmus tesztelése hibás adatbázissal| Hibaüzenet visszadobásnak sikeressége.| Sikertelen | Nem a megfelelő hibazüzenet jelenik meg. | Megfelelően informáló hibaüzenet visszaadása a user felé. | 2021.12.20 |
+| 15 | A mellék algoritmus számítási folyamata | A megadott adatbázisból kiolvasott megfelelő adatokkal való számítás. | Sikeres |-|Az algoritmus hibaüzenet visszadobása nélkül képes számításokat végezni. | 2021.12.20 |
+| 16 | A mellék algoritmus számításának pontossága |A megadott adatbázisból kiolvasott adatokat feldolgozza viszont nem megfelelő pontossággal dolgozik, összességében pontatlan. | Sikertelen | A matematikai formula élesítése szükséges. | 2021.12.20 |
+| 17 | A mellék algoritmus input kezelése | A mellék algoritmus megfelelően olvassa be a user által megadott int típusú adatot. | Sikeres | - | Hibaüzenet mentes input beolvasás és megfelelő típuskezelése. | 2021.12.20 |
 
 
 ## Rados Kevin által készített report.
