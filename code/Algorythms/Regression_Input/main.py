@@ -1,7 +1,7 @@
 import pandas as pd
 from matplotlib import pyplot as plt
 
-raw_data = pd.read_excel('D:\CovidProj\hun.xlsx')
+raw_data = pd.read_excel('D:\Egyetem\CovidProj\hun.xlsx')
 
 total_cases = raw_data['total_cases']
 total_deaths = raw_data['total_deaths']
