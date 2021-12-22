@@ -65,3 +65,12 @@ def learn_parameters(data,params):
     params['alpha'] = alpha
     params['beta'] = beta
 
+new_parameter = {'alpha' : -2, 'beta' : 1000}
+learn_parameters(data,new_parameter)
+
+spaced_cases = list(range(19))
+spaced_untrained_predictions = [y_hat(x,parameters) for x in spaced_cases]
+
+cases = data['cases']
+day = data['day']
+
