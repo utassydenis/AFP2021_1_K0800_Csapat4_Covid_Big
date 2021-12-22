@@ -74,3 +74,11 @@ spaced_untrained_predictions = [y_hat(x,parameters) for x in spaced_cases]
 cases = data['cases']
 day = data['day']
 
+spaced_trained_predictions = [y_hat(x,new_parameter) for x in spaced_cases]
+plt.scatter(cases,day,label='Data')
+plt.title('Cases vs Days')
+plt.xlabel('Cases')
+plt.ylabel('Days')
+
+new_cases = int(input('Enter cases to predict days: '))
+print(y_hat(new_cases,new_parameter))
