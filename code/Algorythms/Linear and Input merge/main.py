@@ -38,3 +38,30 @@ plt.plot(y0, '--b')
 plt.show()
 
 
+## Input Regression
+
+cases = data['cases']
+day = data['day']
+plt.scatter(cases,day,label='Data')
+plt.title('Cases vs Days')
+plt.xlabel('Cases')
+plt.ylabel('Days')
+plt.show()
+
+parameters = {'alpha' : 1000, 'beta':500}
+
+def y_hat(cases,params):
+    alpha = params['alpha']
+    beta = params['beta']
+    return alpha + beta * cases
+y_hat(5,parameters)
+
+def learn_parameters(data,params):
+    x,y = data['cases'],data['day']
+    x_bar,y_bar = x.mean(), y.mean()
+    x,y = x.to_numpy(), y.to_numpy()
+    beta = sum(((x-x_bar) * (y-y_bar)) / sum((x-x_bar)**2))
+    alpha = y_bar - beta * x_bar
+    params['alpha'] = alpha
+    params['beta'] = beta
+
