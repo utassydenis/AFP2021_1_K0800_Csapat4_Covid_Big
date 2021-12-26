@@ -12,3 +12,4 @@
 | 10 | Pontosság megjelenítése százalékban. | Futás közben az algoritmus kiírja a pontosságot százalékban. | Sikeres. | A pontosságon javítani kell. | Százalékos megjelenítés. | 2021.12.23. |
 | 11 | Gombok működése frontendben. | Gombok működnek, megjelennek. | Sikeres. | - | Hibaüzenet nélküli futás. | 2021.12.23. |
 | 12 | GUI megjelenítése. | Indításkor megjelenik az ablak. | Sikeres. | - | Az alkalmazás hiba nélkül megnyílik. | 2021.12.23. |
+| 13 | Spinner működése. | Lenyitáskor az adatok helyesek, megjelennek, kiválaszthatóak. | Sikeres. | - | A spinner megnyílik, az adatok helyesen jelennek meg, kiválasztható a kívánt ország. | 2021.12.23. |
