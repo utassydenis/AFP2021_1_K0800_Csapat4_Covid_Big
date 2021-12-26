@@ -10,3 +10,5 @@
 | 8 | Predikció | A visszakapott adat nem teljesen jó, a pontosságot javítani kell. | Sikeres, de nem túl pontos. | Javítható. | Hibamentes futás. | 2021.12.23. |
 | 9 | Adatok feldolgozása létező adatbázisból, de nem létező oszlopból. | Nem létező oszlop átadása paraméterben. | Sikertelen. | - | A program nem fut le. | 2021.12.23. |
 | 10 | Pontosság megjelenítése százalékban. | Futás közben az algoritmus kiírja a pontosságot százalékban. | Sikeres. | A pontosságon javítani kell. | Százalékos megjelenítés. | 2021.12.23. |
+| 11 | Gombok működése frontendben. | Gombok működnek, megjelennek. | Sikeres. | - | Hibaüzenet nélküli futás. | 2021.12.23. |
+| 12 | GUI megjelenítése. | Indításkor megjelenik az ablak. | Sikeres. | - | Az alkalmazás hiba nélkül megnyílik. | 2021.12.23. |
