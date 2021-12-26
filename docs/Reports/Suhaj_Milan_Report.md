@@ -10,6 +10,9 @@
 | 8 | Predikció | A visszakapott adat nem teljesen jó, a pontosságot javítani kell. | Sikeres, de nem túl pontos. | Javítható. | Hibamentes futás. | 2021.12.23. |
 | 9 | Adatok feldolgozása létező adatbázisból, de nem létező oszlopból. | Nem létező oszlop átadása paraméterben. | Sikertelen. | - | A program nem fut le. | 2021.12.23. |
 | 10 | Pontosság megjelenítése százalékban. | Futás közben az algoritmus kiírja a pontosságot százalékban. | Sikeres. | A pontosságon javítani kell. | Százalékos megjelenítés. | 2021.12.23. |
-| 11 | Gombok működése frontendben. | Gombok működnek, megjelennek. | Sikeres. | - | Hibaüzenet nélküli futás. | 2021.12.23. |
-| 12 | GUI megjelenítése. | Indításkor megjelenik az ablak. | Sikeres. | - | Az alkalmazás hiba nélkül megnyílik. | 2021.12.23. |
+| 11 | GUI megjelenítése. | Indításkor megjelenik az ablak. | Sikeres. | - | Az alkalmazás hiba nélkül megnyílik. | 2021.12.23. |
+| 12 | Gombok működése frontendben. | Gombok működnek, megjelennek. | Sikeres. | - | Hibaüzenet nélküli futás. | 2021.12.23. |
 | 13 | Spinner működése. | Lenyitáskor az adatok helyesek, megjelennek, kiválaszthatóak. | Sikeres. | - | A spinner megnyílik, az adatok helyesen jelennek meg, kiválasztható a kívánt ország. | 2021.12.23. |
+| 14 | Frissítés gomb működése az adatokat tartalmazó adatbázis nélkül. | A program letölti a felhasznált adatokat tartalmazó fájlt a gomb megnyomására. | Sikeres. | - | A fájl letöltése megtörténik gombnyomásra. | 2021.12.23. |
+| 15 | Frissítés gomb működése változás nélkül. | A felhasznált adatokkal a program létrehoz egy fájlt. | Sikeres. | - | A program létrehozza a fájlt az adatokkal. | 2021.12.23. |
+| 16 | Frissítés gomb működése nem létező adatbázissal. | Ha a megadott adatbázis nem létezik, a programnak létre kell hoznia azt és feltölteni helyes adatokkal. | Sikeres. | - | A program létrehozza az adatbázist és feltölti helyes adatokkal. | 2021.12.23. |
