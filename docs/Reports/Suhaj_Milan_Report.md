@@ -1,6 +1,6 @@
 | Folyamat száma  | Funkció | Tesztelési folyamat leírása | Végkifejlet | Komment | Várt eredmény | Időpont|
 | --------------- | ------- | --------------------------- | ----------- | -------- | -------------| ------ |
-| 1  | Grafikon kirajzolása halálesetek számára vonatkozóan. | Megadott paraméterrel grafikon kirajzolása. | Sikeres | - | Suhaj Milán | 2021.12.13. |
+| 1  | Grafikon kirajzolása halálesetek számára vonatkozóan. | Megadott paraméterrel grafikon kirajzolása. | Sikeres | - | A grafikon megjelenítése az adatok alapján. | 2021.12.13. |
 | 2  | Grafikon kirajzolása megbetegedések számára vonatkozóan. | Megadott paraméterrel grafikon kirajzolása. | Sikeres. | - | Grafikon megjelenítése hiba nélkül | 2021.12.13. |
 | 3  | Másik adatbázis megadása feldolgozáshoz. | Adatok feldolgozása másik adatbázisból. | Sikeres. | - | Hibamentes működés. | 2021.12.13. |
 | 4  | Pontosság megjelenítése. | Adatok feldolgozása, majd pontosság megjelenítése. | Sikeres. | - | Hibamentes működés. | 2021.12.13. |
