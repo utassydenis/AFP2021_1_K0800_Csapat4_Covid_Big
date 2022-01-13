@@ -16,3 +16,4 @@
 | 14 | Frissítés gomb működése az adatokat tartalmazó adatbázis nélkül. | A program letölti a felhasznált adatokat tartalmazó fájlt a gomb megnyomására. | Sikeres. | - | A fájl letöltése megtörténik gombnyomásra. | 2021.12.23. |
 | 15 | Frissítés gomb működése változás nélkül. | A felhasznált adatokkal a program létrehoz egy fájlt. | Sikeres. | - | A program létrehozza a fájlt az adatokkal. | 2021.12.23. |
 | 16 | Frissítés gomb működése nem létező adatbázissal. | Ha a megadott adatbázis nem létezik, a programnak létre kell hoznia azt és feltölteni helyes adatokkal. | Sikeres. | - | A program létrehozza az adatbázist és feltölti helyes adatokkal. | 2021.12.23. |
+| 17 | Elküldés gomb helyes adatokkal. | A programnak vissza kell adnia a fertőzöttek és a halottak számát a megadott országra és időintervallumra vonatkozóan. | Sikeres. | - | A program a label-eken megjeleníti az adatokat. | 2022.01.13. |
