@@ -8,3 +8,7 @@
 | 6  | Metódusok tesztelése | Metódusok tesztelése helytelen adatokkal| Sikeres | - | Géczi Bálint | 2022.01.16 |
 | 7  | Algoritmus tesztelése | Algoritmus tesztelése helytelen adatokkal| Sikeres | - | Géczi Bálint | 2022.01.16 |
 | 8  | Algoritmus tesztelése | Algoritmus tesztelése helyes adatokkal| Sikeres | - | Géczi Bálint | 2022.01.16 |
+| 9  | Legördülő lista | Lenyíló lista tesztelése gomb nyomására| Sikeres | - | Géczi Bálint | 2022.01.16 |
+| 10  | Legördülőlista | Elem kiválasztása| Sikeres | - | Géczi Bálint | 2022.01.16 |
+| 11  | Elküldés gomb| Tesztelése helyes adatokkal| Sikeres | - | Géczi Bálint | 2022.01.16 |
+| 12  | Elküldés gomb | Tesztelése helytelen adatokkal| Sikeres | - | Géczi Bálint | 2022.01.16 |
