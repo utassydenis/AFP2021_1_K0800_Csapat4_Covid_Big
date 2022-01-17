@@ -17,4 +17,4 @@
 | 15  | Prediction | Prediction tesztelése, ugyanazzal az adattal többször is, hogy ugyanazt az eredményt kapjuk| Sikeres | - | Géczi Bálint | 2022.01.17 |
 | 16  | Adatbázis| Adatbázishoz kapcsolódás| Sikeres | - | Géczi Bálint | 2022.01.17 |
 | 17  | Adatbázis| Másik adatbázis használata| Sikeres | - | Géczi Bálint | 2022.01.17 |
-| 17  | Adatbázis| Adatbázis frissítése| Sikeres | - | Géczi Bálint | 2022.01.17 |
+| 18  | Adatbázis| Adatbázis frissítése| Sikeres | - | Géczi Bálint | 2022.01.17 |
