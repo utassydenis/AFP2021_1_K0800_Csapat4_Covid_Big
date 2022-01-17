@@ -12,3 +12,6 @@
 | 10  | Legördülőlista | Elem kiválasztása| Sikeres | - | Géczi Bálint | 2022.01.16 |
 | 11  | Elküldés gomb| Tesztelése helyes adatokkal| Sikeres | - | Géczi Bálint | 2022.01.16 |
 | 12  | Elküldés gomb | Tesztelése helytelen adatokkal| Sikeres | - | Géczi Bálint | 2022.01.16 |
+| 13  | Prediction | Megjelenésének tesztelése| Sikeres | - | Géczi Bálint | 2022.01.17 |
+| 14  | Prediction | Prediction tesztelése, más rendszeren| Sikeres | - | Géczi Bálint | 2022.01.17 |
+| 15  | Prediction | Prediction tesztelése, ugyanazzal az adattal többször is, hogy ugyanazt az eredményt kapjuk| Sikeres | - | Géczi Bálint | 2022.01.17 |
