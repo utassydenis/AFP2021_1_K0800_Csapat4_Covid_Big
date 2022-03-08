@@ -57,4 +57,4 @@ def Predictor(day: int, column: str, data: str):
     plt.show()
 
 
-Predictor(20, "cases", "covid_hungary")
+Predictor(90, "cases", "covid_hungary")
