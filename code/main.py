@@ -24,24 +24,29 @@ class Covid(FloatLayout):
         super(Covid, self).__init__(**kwargs)
 
     #To-do eleje Milán
-    def prediction_algorythm(day: int, column: str, data: str):
-        file = open(data + ".csv")
+    def prediction_algorythm(self):
+        if mire == 'Halálesetek':
+            column = 'deaths'
+        else:
+            column = 'cases'
+
+        file = open(régió + ".csv")
         reader = csv.reader(file)
         lines = int(len(list(reader))) - 1
         print('Number of rows: ', lines)
 
-        data = pd.read_csv(data + '.csv', sep=';')
-        data = data[[napok, column]]
+        data = pd.read_csv(régió + '.csv', sep=';')
+        data = régió[[napok, column]]
         print('-' * 30);
         print('HEAD');
         print('-' * 30)
-        print(data.head())
+        print(régió.head())
 
         print('-' * 30);
         print('PREPARE DATA');
         print('-' * 30)
-        x = np.array(data[napok]).reshape(-1, 1)
-        y = np.array(data[column]).reshape(-1, 1)
+        x = np.array(régió[napok]).reshape(-1, 1)
+        y = np.array(régió[column]).reshape(-1, 1)
         plt.plot(y, '-m')
 
         polyFeat = PolynomialFeatures(degree=4)
