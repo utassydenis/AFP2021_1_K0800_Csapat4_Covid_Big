@@ -24,14 +24,14 @@ class Covid(FloatLayout):
         super(Covid, self).__init__(**kwargs)
 
     #To-do eleje Milán
-    def prediction_algoryth(day: int, column: str, data: str):
+    def prediction_algorythm(day: int, column: str, data: str):
         file = open(data + ".csv")
         reader = csv.reader(file)
         lines = int(len(list(reader))) - 1
         print('Number of rows: ', lines)
 
         data = pd.read_csv(data + '.csv', sep=';')
-        data = data[['day', column]]
+        data = data[[napok, column]]
         print('-' * 30);
         print('HEAD');
         print('-' * 30)
@@ -40,7 +40,7 @@ class Covid(FloatLayout):
         print('-' * 30);
         print('PREPARE DATA');
         print('-' * 30)
-        x = np.array(data['day']).reshape(-1, 1)
+        x = np.array(data[napok]).reshape(-1, 1)
         y = np.array(data[column]).reshape(-1, 1)
         plt.plot(y, '-m')
 
@@ -56,7 +56,7 @@ class Covid(FloatLayout):
         print(f'Accuracy:{round(accuracy * 100, 3)} %')
         y0 = model.predict(x)
 
-        days = day
+        days = napok
         print('-' * 30);
         print('PREDICTION');
         print('-' * 30)

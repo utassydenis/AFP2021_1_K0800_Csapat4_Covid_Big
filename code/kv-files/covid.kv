@@ -58,7 +58,7 @@
         size_hint: 0.1,0.05
         pos_hint:{'top':.2, 'right': 0.2}
     TextInput:
-        id: "napok"
+        id: napok
         hint_text: 'pl.: 10'
         multiline: False
         size_hint: 0.05,0.05
@@ -67,7 +67,7 @@
         text: 'Elküldés'
         size_hint: 0.30,0.1
         pos_hint:{'top':.1, 'right': 0.3}
-        on_press: root.search_db()
+        on_press: root.search_db(); root.prediction_algorythm()
     Button:
         id: hiba
         text: 'Hibabejelentés'
