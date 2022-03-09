@@ -52,19 +52,28 @@
         size_hint: 0.1, 0.05
         pos_hint:{'right':1, 'top':1}
         on_press: root.update_db()
+    Label:
+        text: "Napok száma:"
+        id: napok_label
+        size_hint: 0.1,0.05
+        pos_hint:{'top':.5, 'right': 0.2}
+    TextInput:
+        id: napok
+        hint_text: 'pl.: 10'
+        multiline: False
+        size_hint: 0.05,0.05
+        pos_hint:{'top':.5, 'right': 0.3}
+    Spinner:
+        id: mire
+        text: 'Halálesetek/esetszámok'
+        size_hint: 0.30,0.1
+        pos_hint:{'top':.4, 'right': 0.3}
+        values:  'Halálesetek','Esetszámok'
     Button:
         text: 'Elküldés'
         size_hint: 0.30,0.1
-        pos_hint:{'top':.3, 'right': 0.3}
-        on_press: root.search_db()
-    Button:
-        text: '2 hét'
-        size_hint:0.30,0.1
-        pos_hint:{'top':.2, 'right':0.3}
-    Button:
-        text: '1 hónap'
-        size_hint:0.30,0.1
-        pos_hint:{'top':.1 , 'right':0.3}
+        pos_hint:{'top':.1, 'right': 0.3}
+        on_press: root.search_db(), root.prediction_algorythm()
     Button:
         id: hiba
         text: 'Hibabejelentés'
