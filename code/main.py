@@ -1,12 +1,17 @@
 from datetime import datetime
 from kivy import Config
-from kivy.app import  App
+from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.floatlayout import FloatLayout
 import requests
 import os.path
 import mysql.connector
-import re
+
+from tkinter import *
+from tkinter import ttk
+from tkinter import messagebox
+
+Config.set('graphics','resizeable',True)
 
 Builder.load_file("kv-files/covid.kv")
 Config.set("graphics", "width", "1050")
@@ -235,6 +240,8 @@ class Covid(FloatLayout):
                 self.return_values(self.ids.régió.text, self.ids.tól.text, self.ids.ig.text)
             else:
                 print("Kérem adjon meg más dátumokat.")
+
+    
 
 class CovidApp(App):
     def build(self):
