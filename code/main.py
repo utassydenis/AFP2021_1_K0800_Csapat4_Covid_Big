@@ -274,6 +274,12 @@ class Covid(FloatLayout):
 
         textcomment.config(wrap='word')
 
+        def clear():
+            messagebox.showinfo(title='clear', message='Ki szeretnéd törölni a megadottakat?')
+            entry_name.delete(0, END)
+            entry_email.delete(0, END)
+            textcomment.delete(1.0, END)
+
 class CovidApp(App):
     def build(self):
         return Covid()
