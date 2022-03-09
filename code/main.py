@@ -280,6 +280,20 @@ class Covid(FloatLayout):
             entry_email.delete(0, END)
             textcomment.delete(1.0, END)
 
+        def submit():
+            print('Name:{}'.format(myvar.get()))
+            print('Email:{}'.format(var.get()))
+            print('Comment:{}'.format(textcomment.get(1.0, END)))
+            messagebox.showinfo(title='Elküldés', message='Köszönjük a visszajelzést, a véleményed mentésre került.')
+            entry_name.delete(0, END)
+            entry_email.delete(0, END)
+            textcomment.delete(1.0, END)
+
+        submitbutton = ttk.Button(frame_content, text='Elküldés', command=submit).grid(row=4, column=0, sticky='e')
+        clearbutton = ttk.Button(frame_content, text='Törlés', command=clear).grid(row=4, column=1, sticky='w')
+
+        mainloop()
+
 class CovidApp(App):
     def build(self):
         return Covid()
