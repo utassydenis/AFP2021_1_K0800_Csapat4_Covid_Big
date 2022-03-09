@@ -241,7 +241,38 @@ class Covid(FloatLayout):
             else:
                 print("Kérem adjon meg más dátumokat.")
 
-    
+    def error_report_press(self):
+        root = Tk()
+        frame_header = ttk.Frame(root)
+        frame_header.pack()
+        headerlabel = ttk.Label(frame_header, text='Hibabejelentés', foreground='Black',
+                                font=('Times New Roman', 24))
+        headerlabel.grid(row=0, column=1)
+        messagelabel = ttk.Label(frame_header,
+                                 text='Kérem írja le, mit gondol a programról!',
+                                 foreground='purple', font=('Arial', 10))
+        messagelabel.grid(row=1, column=1)
+
+        frame_content = ttk.Frame(root)
+        frame_content.pack()
+        myvar = StringVar()
+        var = StringVar()
+        namelabel = ttk.Label(frame_content, text='Name')
+        namelabel.grid(row=0, column=0, padx=5, sticky='sw')
+        entry_name = ttk.Entry(frame_content, width=18, font=('Arial', 14), textvariable=myvar)
+        entry_name.grid(row=1, column=0)
+
+        emaillabel = ttk.Label(frame_content, text='Email')
+        emaillabel.grid(row=0, column=1, sticky='sw')
+        entry_email = ttk.Entry(frame_content, width=18, font=('Arial', 14), textvariable=var)
+        entry_email.grid(row=1, column=1)
+
+        commentlabel = ttk.Label(frame_content, text='Comment', font=('Arial', 10))
+        commentlabel.grid(row=2, column=0, sticky='sw')
+        textcomment = Text(frame_content, width=55, height=10)
+        textcomment.grid(row=3, column=0, columnspan=2)
+
+        textcomment.config(wrap='word')
 
 class CovidApp(App):
     def build(self):
