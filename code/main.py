@@ -260,7 +260,7 @@ class Covid(FloatLayout):
         print("Update started!")
         self.dir_exist()
         if not os.path.exists("database/data.csv"):
-            self.download_cvs()
+            self.download_csv()
         self.make_Trimmed_file()
         self.trim_data()
         self.check_if_db_exists()
