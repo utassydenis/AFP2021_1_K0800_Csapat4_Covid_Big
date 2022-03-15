@@ -157,16 +157,18 @@ class Covid(FloatLayout):
         mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
         mycursor = mydb.cursor()
         print("Creating table.")
-        mycursor.execute("CREATE TABLE covid (ID int NOT NULL AUTO_INCREMENT,  DATE date, INFECTED_NUM int, DEATH_NUM int, COUNTRY varchar(255), CONTINENT varchar(255) , INFECTED_TOTAL_CASES int , DEATH_TOTAL_CASES int , PRIMARY KEY (ID));")
+        mycursor.execute("CREATE TABLE covid (ID int NOT NULL AUTO_INCREMENT,  DATE date,COUNTRY varchar (255),REGION varchar(255), INFECTED_NEW int, DEATH_NEW int, PRIMARY KEY (ID));")
         print("Table created.")
         print("Populating table.")
-        sql = "INSERT INTO Covid(DATE,INFECTED_NUM,DEATH_NUM,COUNTRY,CONTINENT) VALUES (%s, %s,%s,%s,%s)"
+        sql = "INSERT INTO Covid(DATE,COUNTRY,REGION,INFECTED_NEW,DEATH_NEW) VALUES (%s,%s,%s,%s,%s)"
         file = open("database/dataTrim.csv", "r")
         for line in file:
             darabok = line.split(sep=",")
-            convert = darabok[0].split(sep="/")
-            date = convert[2] + "-" + convert[1] + "-" + convert[0]
-            val = (date, darabok[1], darabok[2], darabok[3], darabok[4])
+            if(int(darabok[3]) < 0):
+                darabok[3] = '0'
+            if(int(darabok[4]) <  0):
+                darabok[4] = '0'
+            val = (darabok[0], darabok[1], darabok[2], darabok[3],darabok[4])
             mycursor.execute(sql, val)
         mydb.commit()
         mycursor.close()
