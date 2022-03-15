@@ -180,13 +180,15 @@ class Covid(FloatLayout):
         print("Resetting database")
         mycursor.execute("DELETE FROM covid;")
         mycursor.execute("TRUNCATE TABLE covid;")
-        sql = "INSERT INTO Covid(DATE,INFECTED_NUM,DEATH_NUM,COUNTRY,CONTINENT) VALUES (%s, %s,%s,%s,%s)"
+        sql = "INSERT INTO Covid(DATE,COUNTRY,REGION,INFECTED_NEW,DEATH_NEW) VALUES (%s,%s,%s,%s,%s)"
         file = open("database/dataTrim.csv", "r")
         for line in file:
             darabok = line.split(sep=",")
-            convert = darabok[0].split(sep="/")
-            date = convert[2] + "-" + convert[1] + "-" + convert[0]
-            val = (date, darabok[1], darabok[2], darabok[3], darabok[4])
+            if(int(darabok[3]) < 0):
+                darabok[3] = '0'
+            if(int(darabok[4]) <  0):
+                darabok[4] = '0'
+            val = (darabok[0], darabok[1], darabok[2], darabok[3],darabok[4])
             mycursor.execute(sql, val)
         mydb.commit()
         mycursor.close()
