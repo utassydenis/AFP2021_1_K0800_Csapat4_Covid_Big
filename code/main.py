@@ -111,12 +111,12 @@ class Covid(FloatLayout):
         next(inF)
         for line in inF:
             darabok = line.split(sep=",")
-            if darabok[6] == '"Bonaire':
-                darabok[6] = "Bonaire_Saint_Eustatius_and_Saba"
-                outF.write(darabok[0] + "," + darabok[4] + "," + darabok[5] + "," + darabok[6] + "," + darabok[11])
+            if darabok[2] == '"occupied Palestinian territory':
+                darabok[2] = 'occupied Palestinian territory including east Jerusalem'
+                outF.write(darabok[0] + "," + darabok[2] + "," + darabok[4] + "," + darabok[5] + "," + darabok[7])
                 outF.write("\n")
             else:
-                outF.write(darabok[0] + "," + darabok[4] + "," + darabok[5] + "," + darabok[6] + "," + darabok[10])
+                outF.write(darabok[0] + "," + darabok[2] + "," + darabok[3] + "," + darabok[4] + "," + darabok[6])
                 outF.write("\n")
         inF.close()
         outF.close()
