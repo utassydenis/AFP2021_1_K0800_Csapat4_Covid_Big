@@ -87,9 +87,9 @@ class Covid(FloatLayout):
         if not os.path.exists("database"):
             os.makedirs("database")
 
-    def download_cvs(self):
+    def download_csv(self):
         print("Source file doesn't exist. Downloading...")
-        url = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/csv/data.csv'
+        url = 'https://covid19.who.int/WHO-COVID-19-global-data.csv'
         r = requests.get(url, allow_redirects=True)
         open('database/data.csv', 'wb').write(r.content)
         print("Source file downloaded.")
