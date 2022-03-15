@@ -234,23 +234,22 @@ class Covid(FloatLayout):
     def return_values(self,spinner_section,from_section,till_section):
         mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
         mycursor = mydb.cursor()
-        if spinner_section == "Világ":
-            sql_death = "SELECT SUM(DEATH_NUM) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}';".format(from_section,till_section)
-            sql_infected = "SELECT SUM(INFECTED_NUM) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}';".format(from_section, till_section)
-        elif spinner_section == "Európa":
-            sql_death = "SELECT SUM(DEATH_NUM) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}' AND CONTINENT = 'Europe\n';".format(from_section, till_section)
-            sql_infected = "SELECT SUM(INFECTED_NUM) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}' AND CONTINENT = 'Europe\n';".format(from_section, till_section)
+        if spinner_section == "World":
+            sql_death = "SELECT SUM(DEATH_NEW) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}';".format(from_section,till_section)
+            sql_infected = "SELECT SUM(INFECTED_NEW) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}';".format(from_section, till_section)
+        elif spinner_section == "AFRO" or spinner_section == "AMRO" or spinner_section == "EMRO" or spinner_section == "EURO" or spinner_section == "SEARO" or spinner_section == "WPRO":
+            sql_death = "SELECT SUM(DEATH_NEW) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}' AND REGION = '{2}';".format(from_section, till_section, spinner_section)
+            sql_infected = "SELECT SUM(INFECTED_NEW) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}' AND REGION = '{2}';".format(from_section, till_section, spinner_section)
         else:
-            sql_death = "SELECT SUM(DEATH_NUM) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}' AND COUNTRY ='{2}';".format(from_section, till_section, spinner_section)
-            sql_infected = "SELECT SUM(INFECTED_NUM) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}' AND COUNTRY ='{2}';".format(from_section, till_section, spinner_section)
+            sql_death = "SELECT SUM(DEATH_NEW) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}' AND COUNTRY ='{2}';".format(from_section, till_section, spinner_section)
+            sql_infected = "SELECT SUM(INFECTED_NEW) FROM covid WHERE DATE >= '{0}' AND DATE <= '{1}' AND COUNTRY ='{2}';".format(from_section, till_section, spinner_section)
         statements = [sql_death, sql_infected]
         for statement in statements:
             mycursor.execute(statement)
-            if statement.find("DEATH_NUM") > 0:
+            if statement.find("DEATH_NEW") > 0:
                 death_sum = mycursor.fetchall()
             else:
                 infected_sum = mycursor.fetchall()
-
         self.ids.HalottPlaceHolder.text = re.sub("[^0-9]", "", str(death_sum))
         self.ids.FertőPlaceHolder.text = re.sub("[^0-9]", "", str(infected_sum))
         mycursor.close()
