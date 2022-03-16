@@ -6,14 +6,14 @@ from kivy.uix.floatlayout import FloatLayout
 import requests
 import os.path
 import mysql.connector
-<<<<<<< HEAD
+#<<<<<<< HEAD
 
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
 
 Config.set('graphics','resizeable',True)
-=======
+#=======
 import re
 import pandas as pd
 import numpy as np
@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn import linear_model
 import csv
->>>>>>> main
+#>>>>>>> main
 
 Builder.load_file("kv-files/covid.kv")
 Config.set("graphics", "width", "1050")
@@ -34,28 +34,29 @@ class Covid(FloatLayout):
 
     #To-do eleje Milán
     def prediction_algorythm(self):
-        if mire == 'Halálesetek':
-            column = 'deaths'
+        if self.ids.mire.text == 'Halálesetek':
+            column = "deaths"
         else:
-            column = 'cases'
+            column = "cases"
 
-        file = open(régió + ".csv")
+        file = open(self.ids.régió.text + ".csv")
         reader = csv.reader(file)
         lines = int(len(list(reader))) - 1
         print('Number of rows: ', lines)
 
-        data = pd.read_csv(régió + '.csv', sep=';')
-        data = régió[[napok, column]]
+        data = pd.read_csv(self.ids.régió.text + '.csv', sep=';')
+        #data = data[int(self.ids.napok.text), column]
+        data = data[['day', column]]
         print('-' * 30);
         print('HEAD');
         print('-' * 30)
-        print(régió.head())
+        print(data.head())
 
         print('-' * 30);
         print('PREPARE DATA');
         print('-' * 30)
-        x = np.array(régió[napok]).reshape(-1, 1)
-        y = np.array(régió[column]).reshape(-1, 1)
+        x = np.array(data['day']).reshape(-1, 1)
+        y = np.array(data[column]).reshape(-1, 1)
         plt.plot(y, '-m')
 
         polyFeat = PolynomialFeatures(degree=4)
@@ -70,7 +71,7 @@ class Covid(FloatLayout):
         print(f'Accuracy:{round(accuracy * 100, 3)} %')
         y0 = model.predict(x)
 
-        days = napok
+        days = int(self.ids.napok.text)
         print('-' * 30);
         print('PREDICTION');
         print('-' * 30)
