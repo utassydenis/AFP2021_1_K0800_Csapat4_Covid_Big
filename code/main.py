@@ -10,6 +10,9 @@ import mysql.connector
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 Config.set('graphics','resizeable',True)
 
@@ -333,10 +336,18 @@ class Covid(FloatLayout):
             password = "Covidteszt!!11"
             message = textcomment.get(1.0, END)
 
+            message = MIMEMultipart()
+            message['From'] = sender_email
+            message['To'] = rec_email
+            message['Subject'] = 'Hibabejelentés'
+            message.attach(MIMEText(textcomment.get(1.0, END)))
+
             server = smtplib.SMTP('smtp.gmail.com', 587)
             server.starttls()
             server.login(sender_email, password)
-            server.sendmail(sender_email, rec_email, message)
+            text = message.as_string()
+            server.sendmail(sender_email, rec_email, text)
+            server.quit()
 
         submitbutton = ttk.Button(frame_content, text='Elküldés', command=submit).grid(row=4, column=0, sticky='e')
         clearbutton = ttk.Button(frame_content, text='Törlés', command=clear).grid(row=4, column=1, sticky='w')
