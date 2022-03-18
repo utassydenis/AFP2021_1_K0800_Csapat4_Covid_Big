@@ -6,14 +6,13 @@ from kivy.uix.floatlayout import FloatLayout
 import requests
 import os.path
 import mysql.connector
-#<<<<<<< HEAD
 
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
 
 Config.set('graphics','resizeable',True)
-#=======
+
 import re
 import pandas as pd
 import numpy as np
@@ -21,7 +20,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn import linear_model
 import csv
-#>>>>>>> main
+
 
 Builder.load_file("kv-files/covid.kv")
 Config.set("graphics", "width", "1050")
@@ -328,6 +327,16 @@ class Covid(FloatLayout):
             entry_name.delete(0, END)
             entry_email.delete(0, END)
             textcomment.delete(1.0, END)
+
+            sender_email = "covidapptester@gmail.com"
+            rec_email = "rkevin99@gmail.com" #Ide ird be a mailod, ha tesztelni akarod
+            password = "Covidteszt!!11"
+            message = textcomment.get(1.0, END)
+
+            server = smtplib.SMTP('smtp.gmail.com', 587)
+            server.starttls()
+            server.login(sender_email, password)
+            server.sendmail(sender_email, rec_email, message)
 
         submitbutton = ttk.Button(frame_content, text='Elküldés', command=submit).grid(row=4, column=0, sticky='e')
         clearbutton = ttk.Button(frame_content, text='Törlés', command=clear).grid(row=4, column=1, sticky='w')
