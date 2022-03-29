@@ -15,6 +15,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 Config.set('graphics','resizeable',True)
+my_window = Tk()
+width_value = my_window.winfo_screenwidth()
+height_value = my_window.winfo_screenheight()
 
 import re
 import pandas as pd
@@ -26,9 +29,12 @@ import csv
 
 
 Builder.load_file("kv-files/covid.kv")
-Config.set("graphics", "width", "1050")
-Config.set("graphics", "height", "850")
-Config.set("graphics", "resizable", "0")
+#Config.set("graphics", "width", "1050")
+#Config.set("graphics", "height", "850")
+#Config.set("graphics", "resizable", "0")
+
+Config.set("graphics", "width", width_value)
+Config.set("graphics", "height", height_value)
 
 class Covid(FloatLayout):
     def __init__(self, **kwargs):
