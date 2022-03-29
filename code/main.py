@@ -14,7 +14,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-Config.set('graphics','resizeable',True)
+#Config.set('graphics','resizeable',True)
 my_window = Tk()
 width_value = my_window.winfo_screenwidth()
 height_value = my_window.winfo_screenheight()
