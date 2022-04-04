@@ -4,7 +4,8 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.floatlayout import FloatLayout
 import requests
-import os.path
+import shutil
+import os
 import mysql.connector
 
 from tkinter import *
@@ -13,6 +14,7 @@ from tkinter import messagebox
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import datetime
 
 #Config.set('graphics','resizeable',True)
 my_window = Tk()
@@ -42,12 +44,27 @@ class Covid(FloatLayout):
 
     #To-do eleje Milán
     def prediction_algorythm(self):
+        region_spinner = self.ids.régió.text
         if self.ids.mire.text == 'Halálesetek':
             column = "deaths"
         else:
             column = "cases"
 
-        file = open(self.ids.régió.text + ".csv")
+        mydb = mysql.connector.connect(host="localhost", user="root", database="covid_database")
+        mycursor = mydb.cursor()
+        if not(region_spinner =="World" or region_spinner == "AFRO" or region_spinner == "AMRO" or region_spinner == "EMRO" or region_spinner == "EURO" or region_spinner == "SEARO" or region_spinner == "WPRO"):
+            fileWrite = open(region_spinner + ".csv", "w")
+            fileWrite.write("day;month;year;cases;deaths;countriesAndTerritories\n")
+            sql = "SELECT * FROM covid WHERE COUNTRY = '{0}';".format(region_spinner)
+            mycursor.execute(sql)
+            result = mycursor.fetchall();
+            for x in result:
+                dateDarabok = str(x[1]).split("-")
+                newdate = dateDarabok[2] + ";" + dateDarabok[1] + ";" + dateDarabok[0]
+                fileWrite.write(newdate +";" + str(x[4]) +";" +str(x[5]) + ";" + str(x[2]) + "\n")
+            fileWrite.close()
+            mycursor.close()
+            mydb.close()
         reader = csv.reader(file)
         lines = int(len(list(reader))) - 1
         print('Number of rows: ', lines)
