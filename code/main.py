@@ -65,46 +65,51 @@ class Covid(FloatLayout):
             fileWrite.close()
             mycursor.close()
             mydb.close()
-        reader = csv.reader(file)
-        lines = int(len(list(reader))) - 1
-        print('Number of rows: ', lines)
 
-        data = pd.read_csv(self.ids.régió.text + '.csv', sep=';')
-        #data = data[int(self.ids.napok.text), column]
-        data = data[['day', column]]
-        print('-' * 30);
-        print('HEAD');
-        print('-' * 30)
-        print(data.head())
+        if os.path.exists(region_spinner + ".csv") and self.ids.napok.text != "" and int(self.ids.napok.text) > 0:
+            file = open(region_spinner + ".csv")
+            reader = csv.reader(file)
+            lines = int(len(list(reader))) - 1
+            print('Number of rows: ', lines)
 
-        print('-' * 30);
-        print('PREPARE DATA');
-        print('-' * 30)
-        x = np.array(data['day']).reshape(-1, 1)
-        y = np.array(data[column]).reshape(-1, 1)
-        plt.plot(y, '-m')
+            data = pd.read_csv(region_spinner +'.csv', sep=';')
+            #data = data[int(self.ids.napok.text), column]
+            data = data[['day', column]]
+            print('-' * 30);
+            print('HEAD');
+            print('-' * 30)
+            print(data.head())
 
-        polyFeat = PolynomialFeatures(degree=4)
-        x = polyFeat.fit_transform(x)
+            print('-' * 30);
+            print('PREPARE DATA');
+            print('-' * 30)
+            x = np.array(data['day']).reshape(-1, 1)
+            y = np.array(data[column]).reshape(-1, 1)
+            plt.plot(y, '-m')
 
-        print('-' * 30);
-        print('TRAINING DATA');
-        print('-' * 30)
-        model = linear_model.LinearRegression()
-        model.fit(x, y)
-        accuracy = model.score(x, y)
-        print(f'Accuracy:{round(accuracy * 100, 3)} %')
-        y0 = model.predict(x)
+            polyFeat = PolynomialFeatures(degree=4)
+            x = polyFeat.fit_transform(x)
 
-        days = int(self.ids.napok.text)
-        print('-' * 30);
-        print('PREDICTION');
-        print('-' * 30)
-        print(f'Prediction - Cases after {days} days: ', end='')
-        print(round(int(model.predict(polyFeat.fit_transform([[lines + days]])))), 'people')
+            print('-' * 30);
+            print('TRAINING DATA');
+            print('-' * 30)
+            model = linear_model.LinearRegression()
+            model.fit(x, y)
+            accuracy = model.score(x, y)
+            print(f'Accuracy:{round(accuracy * 100, 3)} %')
+            y0 = model.predict(x)
 
-        x1 = np.array(list(range(1, lines + days))).reshape(-1, 1)
-        y1 = model.predict(polyFeat.fit_transform(x1))
+            days = int(self.ids.napok.text)
+            print('-' * 30);
+            print('PREDICTION');
+            print('-' * 30)
+            print(f'Prediction - Cases after {days} days: ', end='')
+            print(round(int(model.predict(polyFeat.fit_transform([[lines + days]])))), 'people')
+
+            x1 = np.array(list(range(1, lines + days))).reshape(-1, 1)
+            y1 = model.predict(polyFeat.fit_transform(x1))
+        else:
+            print("Data not found")
     #To-do vége Milán
         
     # ----- update_db által meghívott fgvnyek -----
