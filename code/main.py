@@ -295,6 +295,7 @@ class Covid(FloatLayout):
             self.create_table()
         else:
             self.reset_db()
+        shutil.rmtree("database")
         print("Done updating")
 
     def search_db(self):
