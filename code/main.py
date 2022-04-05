@@ -14,7 +14,6 @@ from tkinter import messagebox
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import datetime
 
 #Config.set('graphics','resizeable',True)
 my_window = Tk()
