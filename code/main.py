@@ -57,10 +57,12 @@ class Covid(FloatLayout):
             sql = "SELECT * FROM covid WHERE COUNTRY = '{0}';".format(region_spinner)
             mycursor.execute(sql)
             result = mycursor.fetchall();
+            day = 1
             for x in result:
                 dateDarabok = str(x[1]).split("-")
-                newdate = dateDarabok[2] + ";" + dateDarabok[1] + ";" + dateDarabok[0]
+                newdate = str(day) + ";" + dateDarabok[1] + ";" + dateDarabok[0]
                 fileWrite.write(newdate +";" + str(x[4]) +";" +str(x[5]) + ";" + str(x[2]) + "\n")
+                day += 1
             fileWrite.close()
             mycursor.close()
             mydb.close()
@@ -109,6 +111,7 @@ class Covid(FloatLayout):
             y1 = model.predict(polyFeat.fit_transform(x1))
         else:
             print("Data not found")
+
     #To-do vége Milán
         
     # ----- update_db által meghívott fgvnyek -----
