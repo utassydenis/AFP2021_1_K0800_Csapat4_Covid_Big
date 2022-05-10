@@ -20,3 +20,4 @@
 | 18  | Adatbázis| Adatbázis frissítése| Sikeres | - | Géczi Bálint | 2022.01.17 |
 | 19  | Frontend| Reszponzív nézet tesztelése| Sikeres | - | Géczi Bálint | 2022.05.10 |
 | 20  | Frontend| Legördülő menű tesztelése| Sikeres | - | Géczi Bálint | 2022.05.10 |
+| 21  | Predicton | Legördülő menű és kiválasztás alapján való predictor tesztelése| Sikeres | - | Géczi Bálint | 2022.05.10 |
