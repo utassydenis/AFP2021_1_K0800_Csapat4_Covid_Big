@@ -23,3 +23,4 @@
 | 21 | Elküldés gomb "ig" TextInput helytelen elválasztókkal. | A programnak meg kell vizsgálnia, hogy a megadott elválasztó helyes-e, majd a program visszajelzést küld az eredményről. | Sikeres. | - | A program jelzi, hogy rossz elválasztót használtunk. | 2022.01.13. |
 | 22 | Elküldés gomb a napok számára vonatkozó TextInputtal, helyes számmal. | A programnak le kell hibamentesen futnia, majd egy jósolt adatot kiírnia a beírt számra vonatkozóan. | Sikeres. | - | Hibamentes futás. | 2022.05.10 |
 | 23 | Elküldés gomb a napok számára vonatkozó TextInputtal, helytelen számmal. | A programnak hibakóddal le kell állnia. | Sikeres. | - | A program nem fut le. | 2022.05.10 |
+| 24 | Elküldés gomb a napok számára vonatkozó TextInputtal, betűvel. | A programnak hibakóddal le kell állnia. | Sikeres. | - | A program nem fut le. | 2022.05.10 |
