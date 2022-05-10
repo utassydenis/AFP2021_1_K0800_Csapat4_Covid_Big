@@ -26,3 +26,4 @@
 | 24 | Elküldés gomb a napok számára vonatkozó TextInputtal, betűvel. | A programnak hibakóddal le kell állnia. | Sikeres. | - | A program nem fut le. | 2022.05.10 |
 | 25 | Esetszámok spinner működése. | Lenyitáskor az adatok helyesek, megjelennek, kiválaszthatóak. | Sikeres. | - | A spinner megnyílik, az adatok helyesen jelennek meg. | 2022.05.10 |
 | 25 | Esetszámok spinner működése halálesetek értékkel. | A programnak le kell hibamentesen futnia, majd egy jósolt adatot kiírnia a beírt számra vonatkozóan. | Sikeres. | - | Hibamentes futás. | 2022.05.10 |
+| 26 | Esetszámok spinner működése esetszámok értékkel. | A programnak le kell hibamentesen futnia, majd egy jósolt adatot kiírnia a beírt számra vonatkozóan. | Sikeres. | - | Hibamentes futás. | 2022.05.10 |
