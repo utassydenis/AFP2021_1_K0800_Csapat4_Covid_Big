@@ -18,3 +18,4 @@
 | 16  | Adatbázis| Adatbázishoz kapcsolódás| Sikeres | - | Géczi Bálint | 2022.01.17 |
 | 17  | Adatbázis| Másik adatbázis használata| Sikeres | - | Géczi Bálint | 2022.01.17 |
 | 18  | Adatbázis| Adatbázis frissítése| Sikeres | - | Géczi Bálint | 2022.01.17 |
+| 19  | Frontend| Reszponzív nézet tesztelése| Sikeres | - | Géczi Bálint | 2022.05.10 |
