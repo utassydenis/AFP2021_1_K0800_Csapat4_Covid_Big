@@ -14,3 +14,15 @@
 | 11 | Elküldés gomb működése "tól" TextInput megfelelő elválasztókkal és hibás dátummal. | A vizsgálat során a programnak meg kell vizsgálnia a megadott dátum helyességét és ,hogy az adatbázis intervallumán belül van e. | Sikeres. A program üzenetben jelez a felhasználó számára a hibával. | ------------- | Utassy Dénes | 2021.12.13 |
 | 12 | Elküldés gomb működése "ig" textInput megfelelő elválasztókkal és hibás dátummal. | A vizsgálat során a programnak meg kell vizsgálnia a megadott dátum helyességét és ,hogy az adatbázis intervallumán belül van e. | Sikeres. A program üzenetben jelez a felhasználó számára a hibával. | ------------- | Utassy Dénes | 2021.12.13 |
 | 13 | Elküldés gomb működése helyes dátumokkal- | A programnak vissza kell adnia a megadott spinner érték és időintevellum halottjainak és fertőzöttjeinek összegét. | Sikeres. A program a labeleken keresztül sikeresen visszaadja a helyes adatokat. | ------------- | Utassy Dénes | 2021-12-13 |
+
+| 14 | Adatbázis frissítése | A frissítés gombot megnyomva a program automatikusan frissíti az SQL adatbázist | Sikeres. A program sikeresen frissítette az adatbázist | ------------- | Utassy Dénes | 2022-05-10 |
+| 15 | Adatok szűrése a megadott időintervallumon belül | A program csak az adott intervallumon belüli adatokat vegye figyelembe | Sikeres. A program csak az intervallumon belüli adatokkal dolgozott. | ------------- | Utassy Dénes | 2022-05-10 |
+| 16 | Adatok szűrése a megadott időintervallumon belül és a spinner értéke alapján. | A program csak az adott intervallumon belüli és a spinner adatait  vegye figyelembe | Sikeres. A program csak az elvárt adatokkal dolgozott | ------------- | Utassy Dénes | 2022-05-10 |
+| 17 | Algoritmus működése a "halottak" adatokkal | Az algoritmus előrejelzi a várható halálozási statisztikákat. | Sikeres. Az algoritmus sikeresen elvégzi az előrejelzést | ------------- | Utassy Dénes | 2022-05-10 |
+| 18 | Algoritmus működése a "fertőzöttek" adatokkal | Az algoritmus előrejelzi a várható halálozási statisztikákat. | Sikeres. Az algoritmus sikeresen elvégzi az előrejelzést | ------------- | Utassy Dénes | 2022-05-10 |
+| 19 | Algoritmus működése ha számot adnak meg napoknak. | ------------- | Sikeres. | ------------- | Utassy Dénes | 2022-05-10 |
+| 20 | Algoritmus működése ha nem számot adnak meg napoknak. | Az algoritmusnak le kell kezelnie ha nem számot adnak meg napoknak. | Sikertelen. A program összeomlik ha nem szám van megadva napok számának. | ------------- | Utassy Dénes | 2022-05-10 |
+| 21 | Hibabejelentés gomb. | A programnak a gomb megnyomására nyitnia kell egy ablakot. | Sikeres. | ------------- | Utassy Dénes | 2020-05-10 |
+| 22 | Hibabejelentés: adatok törlése | A program kitörli az adatokat a gomb megnyomásával. | Sikeres. | ------------- | Utassy Dénes | 2020-05-10 |
+| 23 | Elküldés gomb adatok nélkül | A program adatok hinyában nem kell csinálnia semmit. | Sikeres. | ------------- | Utassy Dénes | 2020-05-10 |
+| 24 | Elküldés gomb hibás adatokkal. | A programnak le kell kezelnie ha hibás adatokat írnak be időpontoknak. | Sikeres. | ------------- | Utassy Dénes | 2020-05-10 |
