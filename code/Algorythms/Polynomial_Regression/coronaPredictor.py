@@ -18,7 +18,7 @@ y = np.array(data['cases']).reshape(-1, 1)
 plt.plot(y, '-m')
 # plt.show()
 
-polyFeat = PolynomialFeatures(degree=4)
+polyFeat = PolynomialFeatures(degree=3)
 x = polyFeat.fit_transform(x)
 # print(x)
 
