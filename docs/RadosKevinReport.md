@@ -18,5 +18,11 @@
 | 16 | A mellék algoritmus számításának pontossága |A megadott adatbázisból kiolvasott adatokat feldolgozza viszont nem megfelelő pontossággal dolgozik, összességében pontatlan. | Sikertelen | A matematikai formula élesítése szükséges. | A korábbi számításokhoz tökéletesen illeszkedik a predikció. | 2021.12.20 |
 | 17 | A mellék algoritmus input kezelése | A mellék algoritmus megfelelően olvassa be a user által megadott int típusú adatot. | Sikeres | - | Hibaüzenet mentes input beolvasás és megfelelő típuskezelése. | 2021.12.20 |
 | 18 | A mellék algoritmus vizuális megjelenítése | Az algoritmus a kiszámított adatokat megfelelően jeleníti meg a vizuális felület segítségével. | Sikeres | - | A kirajzolt adat reális, nem ad vissza megkérdőjelezhető eredményt. | 2021.12.20|
+| 19 | A hibabejelentő gomb megnyomására megjelenik egy új ablak | Megjelenik az új ablak és betölti a szükséges adatokat. | Sikeres | - | Minden felületi elem megjelenik. Ami beírható oda lehet írni, ami kattintható oda lehet kattintani. | 2021.05.10|
+| 20 | A név mező | A név mezőbe megadhatja a felhasználó a nevét. | Sikeres | - | Az emailban látszódik a felhasználó neve. | 2021.05.10|
+| 21 | Email mező | Az email mezőbe megadhatja a felhasználó az email címét. | Sikeres | - | A megfelelő emailról jön a levél. | 2021.05.10 |
+| 22 | Comment mező | Ide adhatja meg a felhasználó az észrevételeit. | Sikertelen | Nem adja át a szöveget. | Nem kapja meg a megfelelő inputot. | 2021.05.10 |
+| 23 | Elküldés gomb | A gomb megnyomása esetén elküldi az emailt az adatok alapján. | Sikeres | Érdemes megnézni a spam fiókot is ha nem látszódik a mail. | Megfelelően elküldi az emailt. | 2021.05.10|
+| 24 | Törlés gomb | Kitörli a commentben megadott adatokat. Egyfajta resetként is működik. | Sikeres | - | Clear-eli a beírt adatokat. | 2021.05.10|
 
 ## Rados Kevin által készített report.
